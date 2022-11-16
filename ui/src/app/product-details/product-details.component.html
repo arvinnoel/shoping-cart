@@ -1,0 +1,12 @@
+<h2>Product Details</h2>
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency :"&#8377;"}}</h4>
+  <p>{{ product.description }}</p>
+  <img src={{product.images}} width="300" height="300"/>
+</div><br><br>
+  //<button type="button" (click)="addToCart(product)">Add to Cart</button>
+  <div class="alert2" [class.visible2]="isVisible"> 
+    {{product.name}} Added to Cart Successfully
+  </div>*/
+
